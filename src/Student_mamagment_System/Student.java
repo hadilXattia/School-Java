@@ -155,12 +155,8 @@ public  class Student extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jButton22 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
@@ -173,77 +169,47 @@ public  class Student extends javax.swing.JFrame {
         jButton20 = new javax.swing.JButton();
         jButton25 = new javax.swing.JButton();
         jButton26 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(new java.awt.Color(27, 75, 101));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setBackground(new java.awt.Color(27, 75, 101));
+        jButton1.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(243, 242, 255));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/log-out.png"))); // NOI18N
         jButton1.setText("Log out ");
+        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, 230, 60));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 660, 160, 60));
 
-        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel3.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jLabel3.setBackground(new java.awt.Color(27, 75, 101));
+        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(243, 242, 255));
+        jLabel3.setText("Welcome !");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 110, 60));
 
-        jPanel5.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel5.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/book.png"))); // NOI18N
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 140, 150));
 
-        jLabel3.setBackground(new java.awt.Color(0, 153, 204));
-        jLabel3.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("BROWSE");
-        jPanel5.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 200, 60));
+        jPanel7.setBackground(new java.awt.Color(243, 242, 255));
 
-        jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        jLabel1.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("BROWSE");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 40, 200, 60));
-
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        jButton22.setBackground(new java.awt.Color(0, 0, 0));
-        jButton22.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        jButton22.setForeground(new java.awt.Color(255, 255, 255));
-        jButton22.setText("Exit");
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 230, 60));
-
-        jButton3.setBackground(new java.awt.Color(0, 0, 0));
-        jButton3.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Back");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 230, 60));
-
-        jPanel7.setBackground(new java.awt.Color(0, 153, 204));
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel2.setText("DASHBOARD");
+        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(27, 75, 101));
+        jLabel2.setText("Student dashboard");
 
         jButton4.setBackground(new java.awt.Color(255, 102, 102));
-        jButton4.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -251,7 +217,8 @@ public  class Student extends javax.swing.JFrame {
         });
 
         jButton5.setBackground(new java.awt.Color(255, 153, 153));
-        jButton5.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jButton5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -259,7 +226,8 @@ public  class Student extends javax.swing.JFrame {
         });
 
         jButton6.setBackground(new java.awt.Color(102, 255, 153));
-        jButton6.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
+        jButton6.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jButton6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -267,7 +235,8 @@ public  class Student extends javax.swing.JFrame {
         });
 
         jButton23.setBackground(new java.awt.Color(0, 153, 204));
-        jButton23.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
+        jButton23.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jButton23.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton23ActionPerformed(evt);
@@ -275,65 +244,81 @@ public  class Student extends javax.swing.JFrame {
         });
 
         jButton24.setBackground(new java.awt.Color(255, 204, 153));
-        jButton24.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
+        jButton24.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jButton24.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton24ActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 153, 204));
-        jButton2.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setBackground(new java.awt.Color(27, 75, 101));
+        jButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(243, 242, 255));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/user.png"))); // NOI18N
         jButton2.setText("View Profile");
-        jButton2.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 102, 153)));
+        jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton7.setBackground(new java.awt.Color(0, 153, 204));
-        jButton7.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("ViewGrades");
-        jButton7.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 102, 153)));
+        jButton7.setBackground(new java.awt.Color(27, 75, 101));
+        jButton7.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(243, 242, 255));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/grade.png"))); // NOI18N
+        jButton7.setText("Grades");
+        jButton7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
 
-        jButton20.setBackground(new java.awt.Color(0, 153, 204));
-        jButton20.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
-        jButton20.setForeground(new java.awt.Color(255, 255, 255));
-        jButton20.setText("View Announcements");
-        jButton20.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 102, 153)));
+        jButton20.setBackground(new java.awt.Color(27, 75, 101));
+        jButton20.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jButton20.setForeground(new java.awt.Color(243, 242, 255));
+        jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/notification.png"))); // NOI18N
+        jButton20.setText("View announcements");
+        jButton20.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton20ActionPerformed(evt);
             }
         });
 
-        jButton25.setBackground(new java.awt.Color(0, 153, 204));
-        jButton25.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        jButton25.setBackground(new java.awt.Color(27, 75, 101));
+        jButton25.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jButton25.setForeground(new java.awt.Color(255, 255, 255));
+        jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/absence.png"))); // NOI18N
         jButton25.setText("Check Attendence");
-        jButton25.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 102, 153)));
+        jButton25.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton25ActionPerformed(evt);
             }
         });
 
-        jButton26.setBackground(new java.awt.Color(0, 153, 204));
-        jButton26.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
+        jButton26.setBackground(new java.awt.Color(27, 75, 101));
+        jButton26.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jButton26.setForeground(new java.awt.Color(255, 255, 255));
-        jButton26.setText("Check Quiz");
-        jButton26.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 102, 153)));
+        jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/exam.png"))); // NOI18N
+        jButton26.setText("Check test");
+        jButton26.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton26ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setBackground(new java.awt.Color(243, 242, 255));
+        jButton3.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/close_1.png"))); // NOI18N
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
             }
         });
 
@@ -342,11 +327,7 @@ public  class Student extends javax.swing.JFrame {
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(320, 320, 320)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                .addContainerGap(22, Short.MAX_VALUE)
+                .addContainerGap(71, Short.MAX_VALUE)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -374,14 +355,21 @@ public  class Student extends javax.swing.JFrame {
                         .addGap(18, 18, 18))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
                         .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(212, 212, 212))))
+                        .addGap(212, 212, 212))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(268, 268, 268)
+                        .addComponent(jButton3))))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton3)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(64, 64, 64)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -391,7 +379,7 @@ public  class Student extends javax.swing.JFrame {
                     .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton23, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
                     .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -409,7 +397,7 @@ public  class Student extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -444,10 +432,6 @@ public  class Student extends javax.swing.JFrame {
     view_announcement VA = new view_announcement();
     VA.setVisible(true);
     }//GEN-LAST:event_jButton20ActionPerformed
-
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
         ViewAttendence VA = new ViewAttendence();
@@ -533,7 +517,6 @@ public  class Student extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
@@ -543,12 +526,10 @@ public  class Student extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel7;
     // End of variables declaration//GEN-END:variables
 

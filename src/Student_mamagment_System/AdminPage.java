@@ -114,6 +114,7 @@ public class AdminPage extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(27, 75, 101));
         jButton3.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jButton3.setForeground(new java.awt.Color(243, 242, 255));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/teacher (2).png"))); // NOI18N
         jButton3.setText("Add teacher");
         jButton3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -125,6 +126,7 @@ public class AdminPage extends javax.swing.JFrame {
         jButton4.setBackground(new java.awt.Color(27, 75, 101));
         jButton4.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jButton4.setForeground(new java.awt.Color(243, 242, 255));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/books-stack-of-three.png"))); // NOI18N
         jButton4.setText("Add Course ");
         jButton4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -136,6 +138,7 @@ public class AdminPage extends javax.swing.JFrame {
         jButton5.setBackground(new java.awt.Color(27, 75, 101));
         jButton5.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jButton5.setForeground(new java.awt.Color(243, 242, 255));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/cap.png"))); // NOI18N
         jButton5.setText("Add student");
         jButton5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -225,30 +228,6 @@ public class AdminPage extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-                   Add_Student_Record SR;
-                   SR = new  Add_Student_Record();
-                   SR.setVisible(true);
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        Add_Course Add = new Add_Course();
-        Add.setVisible(true);
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-                    Add_Teacher_Record TR;
-                   TR = new  Add_Teacher_Record();
-                   TR.setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       AdminPage Admin;
-                       Admin = new AdminPage();
-                       Admin.setVisible(false);
-                        dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         int a=JOptionPane.showConfirmDialog(null,"Do you really want to close the application","Select",JOptionPane.YES_NO_OPTION); 
         if(a==0)
@@ -258,6 +237,30 @@ public class AdminPage extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        AdminPage Admin;
+        Admin = new AdminPage();
+        Admin.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        Add_Student_Record SR;
+        SR = new  Add_Student_Record();
+        SR.setVisible(true);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        Add_Course Add = new Add_Course();
+        Add.setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        Add_Teacher_Record TR;
+        TR = new  Add_Teacher_Record();
+        TR.setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
 
   
 
