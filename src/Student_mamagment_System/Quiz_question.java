@@ -106,11 +106,11 @@ public class Quiz_question extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setBackground(new java.awt.Color(243, 242, 255));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        ComboBox.setBackground(new java.awt.Color(51, 51, 51));
-        ComboBox.setFont(new java.awt.Font("Segoe UI Light", 1, 24)); // NOI18N
+        ComboBox.setBackground(new java.awt.Color(243, 242, 255));
+        ComboBox.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         ComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8" }));
         ComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,9 +119,10 @@ public class Quiz_question extends javax.swing.JFrame {
         });
         jPanel5.add(ComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 50, 99, 29));
 
-        jLabel8.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
-        jLabel8.setText("QUIZ QUESTIONS");
-        jPanel5.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(377, 44, 300, 34));
+        jLabel8.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(27, 75, 101));
+        jLabel8.setText("Exam questions");
+        jPanel5.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 30, 280, 50));
 
         jPanel6.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -133,7 +134,7 @@ public class Quiz_question extends javax.swing.JFrame {
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 467, Short.MAX_VALUE)
         );
 
         jPanel5.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 467));
@@ -174,7 +175,7 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q3ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, 710, 60));
+        jPanel5.add(Q3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 710, 60));
 
         Q4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q4.addActionListener(new java.awt.event.ActionListener() {
@@ -182,7 +183,7 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q4ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 370, 710, 60));
+        jPanel5.add(Q4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, 710, 60));
 
         Q1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q1.addActionListener(new java.awt.event.ActionListener() {
@@ -190,7 +191,7 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q1ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 710, 60));
+        jPanel5.add(Q1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 100, 710, 60));
 
         Q2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q2.addActionListener(new java.awt.event.ActionListener() {
@@ -198,15 +199,17 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q2ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 190, 710, 60));
+        jPanel5.add(Q2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 190, 710, 60));
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(27, 75, 101));
         jLabel11.setText("Question no 1:");
-        jPanel5.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 110, 20));
+        jPanel5.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 130, 20));
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(27, 75, 101));
         jLabel12.setText("Question no 3:");
-        jPanel5.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 110, 20));
+        jPanel5.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 130, 20));
 
         Q15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q15.addActionListener(new java.awt.event.ActionListener() {
@@ -214,23 +217,27 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q15ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q15, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1380, 710, 60));
+        jPanel5.add(Q15, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 1380, 710, 60));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(27, 75, 101));
         jLabel3.setText("Question no 4:");
-        jPanel5.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 110, 20));
+        jPanel5.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 130, 20));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(27, 75, 101));
         jLabel2.setText("Question no 15:");
-        jPanel5.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1400, 120, 30));
+        jPanel5.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1400, 150, 30));
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(27, 75, 101));
         jLabel10.setText("Question no 2:");
-        jPanel5.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 110, 40));
+        jPanel5.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 130, 40));
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(27, 75, 101));
         jLabel4.setText("Question no 5:");
-        jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 500, 110, -1));
+        jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, 150, -1));
 
         Q5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q5.addActionListener(new java.awt.event.ActionListener() {
@@ -238,7 +245,7 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q5ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 470, 710, 60));
+        jPanel5.add(Q5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 470, 710, 60));
 
         Q6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q6.addActionListener(new java.awt.event.ActionListener() {
@@ -246,11 +253,12 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q6ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 560, 710, 60));
+        jPanel5.add(Q6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 560, 710, 60));
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(27, 75, 101));
         jLabel5.setText("Question no 6:");
-        jPanel5.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 580, 110, -1));
+        jPanel5.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 580, 140, -1));
 
         Q7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q7.addActionListener(new java.awt.event.ActionListener() {
@@ -258,11 +266,12 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q7ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 650, 710, 60));
+        jPanel5.add(Q7, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 660, 710, 60));
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(27, 75, 101));
         jLabel6.setText("Question no 7:");
-        jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 660, 110, 30));
+        jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 660, 140, 30));
 
         Q8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q8.addActionListener(new java.awt.event.ActionListener() {
@@ -270,11 +279,12 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q8ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 750, 710, 60));
+        jPanel5.add(Q8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 750, 710, 60));
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(27, 75, 101));
         jLabel7.setText("Question no 8:");
-        jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 750, 110, 30));
+        jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 750, 140, 30));
 
         Q9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q9.addActionListener(new java.awt.event.ActionListener() {
@@ -282,11 +292,12 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q9ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 840, 710, 60));
+        jPanel5.add(Q9, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 840, 710, 60));
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(27, 75, 101));
         jLabel13.setText("Question no 9:");
-        jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 840, 110, 30));
+        jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 840, 140, 30));
 
         Q10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q10.addActionListener(new java.awt.event.ActionListener() {
@@ -294,11 +305,12 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q10ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 930, 710, 60));
+        jPanel5.add(Q10, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 930, 710, 60));
 
-        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(27, 75, 101));
         jLabel14.setText("Question no 10:");
-        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 940, 120, 30));
+        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 940, 150, 30));
 
         Q11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q11.addActionListener(new java.awt.event.ActionListener() {
@@ -306,11 +318,12 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q11ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q11, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1030, 710, 60));
+        jPanel5.add(Q11, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 1030, 710, 60));
 
-        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(27, 75, 101));
         jLabel15.setText("Question no 11:");
-        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1040, 120, 30));
+        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1040, 150, 30));
 
         Q12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q12.addActionListener(new java.awt.event.ActionListener() {
@@ -318,11 +331,12 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q12ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q12, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1120, 710, 60));
+        jPanel5.add(Q12, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 1120, 710, 60));
 
-        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(27, 75, 101));
         jLabel16.setText("Question no 12:");
-        jPanel5.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1140, 120, 30));
+        jPanel5.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1140, 150, 30));
 
         Q13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q13.addActionListener(new java.awt.event.ActionListener() {
@@ -330,11 +344,12 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q13ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q13, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1210, 710, 60));
+        jPanel5.add(Q13, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 1210, 710, 60));
 
-        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(27, 75, 101));
         jLabel17.setText("Question no 13:");
-        jPanel5.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1230, 120, 30));
+        jPanel5.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1230, 150, 30));
 
         Q14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Q14.addActionListener(new java.awt.event.ActionListener() {
@@ -342,30 +357,33 @@ public class Quiz_question extends javax.swing.JFrame {
                 Q14ActionPerformed(evt);
             }
         });
-        jPanel5.add(Q14, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1290, 710, 60));
+        jPanel5.add(Q14, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 1290, 710, 60));
 
-        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(27, 75, 101));
         jLabel18.setText("Question no 14:");
-        jPanel5.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1310, 120, 30));
+        jPanel5.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1310, 150, 30));
 
-        jButton1.setBackground(new java.awt.Color(204, 204, 204));
-        jButton1.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 18)); // NOI18N
-        jButton1.setText("UPDATE ");
+        jButton1.setBackground(new java.awt.Color(27, 75, 101));
+        jButton1.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(243, 242, 255));
+        jButton1.setText("Create");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel5.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 1480, 90, -1));
+        jPanel5.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 1460, 120, 50));
 
+        jButton2.setBackground(new java.awt.Color(243, 242, 255));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton2.setText("Back");
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/close_1.png"))); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel5.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        jPanel5.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 10, -1, -1));
 
         jScrollPane1.setViewportView(jPanel5);
 
@@ -373,13 +391,13 @@ public class Quiz_question extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1097, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1103, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(44, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 544, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
