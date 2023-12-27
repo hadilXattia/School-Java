@@ -25,8 +25,6 @@ public class Add_Student_Record extends javax.swing.JFrame {
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
@@ -38,6 +36,9 @@ public class Add_Student_Record extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(243, 242, 255));
         jPanel1.setForeground(new java.awt.Color(243, 242, 255));
+        jPanel1.setMaximumSize(new java.awt.Dimension(1224, 790));
+        jPanel1.setMinimumSize(new java.awt.Dimension(1224, 790));
+        jPanel1.setPreferredSize(new java.awt.Dimension(1224, 790));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -108,7 +109,7 @@ public class Add_Student_Record extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(27, 75, 101));
         jLabel5.setText("Batch No. ");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 380, 180, 40));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 270, 180, 40));
 
         jTextField5.setFont(new java.awt.Font("Sitka Small", 1, 18)); // NOI18N
         jTextField5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -118,7 +119,7 @@ public class Add_Student_Record extends javax.swing.JFrame {
                 jTextField5ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 430, 230, 40));
+        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 330, 230, 40));
 
         jTextField6.setFont(new java.awt.Font("Sitka Small", 1, 18)); // NOI18N
         jTextField6.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -128,29 +129,13 @@ public class Add_Student_Record extends javax.swing.JFrame {
                 jTextField6ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 320, 230, 40));
+        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, 230, 40));
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(27, 75, 101));
         jLabel6.setText("Father Name:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 270, 180, 40));
-
-        jLabel10.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel10.setText("Student ID");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 140, 170, 40));
-
-        jTextField9.setFont(new java.awt.Font("Sitka Small", 1, 18)); // NOI18N
-        jTextField9.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jTextField9.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, 230, 40));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 150, 180, 40));
 
         jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(27, 75, 101));
@@ -158,7 +143,7 @@ public class Add_Student_Record extends javax.swing.JFrame {
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, 250, 50));
 
         jButton2.setBackground(new java.awt.Color(27, 75, 101));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jButton2.setForeground(new java.awt.Color(243, 242, 255));
         jButton2.setText("Add ");
         jButton2.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
@@ -173,12 +158,12 @@ public class Add_Student_Record extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(27, 75, 101));
         jLabel7.setText("Semester");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 480, 180, 40));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 390, 180, 40));
 
         jComboBox2.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8" }));
         jComboBox2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 530, 230, -1));
+        jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 440, 230, -1));
 
         jButton1.setBackground(new java.awt.Color(27, 75, 101));
         jButton1.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
@@ -192,32 +177,32 @@ public class Add_Student_Record extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 630, 200, 50));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 2050, 1150));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1224, 790));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-    private void insert(String Username,String Password,String First_Name,String Last_Name,String Roll_Number,String Father_Name,String Batch_Number,String Semester){
+    private void insert(String Username,String Password,String First_Name,String Last_Name,String Father_Name,String Batch_Number,String Semester){
      try{
         initComponents();
         Connection conn= connection.connect();
         PreparedStatement ps=null ;
         //roll number must be auto increment
-        String sql = "INSERT INTO Student(Username,Password,First_Name,Last_Name,Roll_Number,Father_Name,Batch_Number,Semester) VALUES(?,?,?,?,?,?,?,?)";  
+        String sql = "INSERT INTO Student(Username,Password,First_Name,Last_Name,Father_Name,Batch_Number,Semester) VALUES(?,?,?,?,?,?,?)";  
         ps= conn.prepareStatement(sql);
         ps.setString(1, Username);
         ps.setString(2, Password);
         ps.setString(3, First_Name);
         ps.setString(4, Last_Name);
-        ps.setString(5, Roll_Number);
-        ps.setString(6, Father_Name);
-        ps.setString(7, Batch_Number);
-        ps.setString(8, Semester);
+  
+        ps.setString(5, Father_Name);
+        ps.setString(6, Batch_Number);
+        ps.setString(7, Semester);
         
         ps.execute();
         ps.close();
         conn.close();
-        JOptionPane.showMessageDialog(null, "Record has Been Updeted new Student");
+        JOptionPane.showMessageDialog(null, "Student added successfully");
         }
         catch(SQLException e){
             System.out.println(e.toString()); 
@@ -225,11 +210,6 @@ public class Add_Student_Record extends javax.swing.JFrame {
        
         
     }
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
-        // Roll Number
-       
-    }//GEN-LAST:event_jTextField9ActionPerformed
-
     private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
         // Father Name
         
@@ -263,13 +243,13 @@ public class Add_Student_Record extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         String First_Name = jTextField2.getText();
         String Last_Name = jTextField1.getText();
-        String Roll_Number = jTextField9.getText();
+    
         String Father_Name = jTextField6.getText();
         String Batch = jTextField5.getText();
         String Password= jTextField3.getText();
         String Username= jTextField4.getText();
         String Semester = (String)jComboBox2.getSelectedItem();
-        insert(Username,Password,First_Name,Last_Name,Roll_Number,Father_Name,Batch,Semester);
+        insert(Username,Password,First_Name,Last_Name,Father_Name,Batch,Semester);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -293,7 +273,6 @@ public class Add_Student_Record extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -308,7 +287,6 @@ public class Add_Student_Record extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 
     

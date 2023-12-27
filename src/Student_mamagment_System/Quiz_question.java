@@ -77,30 +77,10 @@ public class Quiz_question extends javax.swing.JFrame {
         Q2 = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        Q15 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         Q5 = new javax.swing.JTextField();
-        Q6 = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        Q7 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        Q8 = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        Q9 = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
-        Q10 = new javax.swing.JTextField();
-        jLabel14 = new javax.swing.JLabel();
-        Q11 = new javax.swing.JTextField();
-        jLabel15 = new javax.swing.JLabel();
-        Q12 = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
-        Q13 = new javax.swing.JTextField();
-        jLabel17 = new javax.swing.JLabel();
-        Q14 = new javax.swing.JTextField();
-        jLabel18 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
@@ -211,23 +191,10 @@ public class Quiz_question extends javax.swing.JFrame {
         jLabel12.setText("Question no 3:");
         jPanel5.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 130, 20));
 
-        Q15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Q15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Q15ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(Q15, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 1380, 710, 60));
-
         jLabel3.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(27, 75, 101));
         jLabel3.setText("Question no 4:");
         jPanel5.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 130, 20));
-
-        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel2.setText("Question no 15:");
-        jPanel5.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1400, 150, 30));
 
         jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(27, 75, 101));
@@ -247,123 +214,6 @@ public class Quiz_question extends javax.swing.JFrame {
         });
         jPanel5.add(Q5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 470, 710, 60));
 
-        Q6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Q6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Q6ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(Q6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 560, 710, 60));
-
-        jLabel5.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel5.setText("Question no 6:");
-        jPanel5.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 580, 140, -1));
-
-        Q7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Q7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Q7ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(Q7, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 660, 710, 60));
-
-        jLabel6.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel6.setText("Question no 7:");
-        jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 660, 140, 30));
-
-        Q8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Q8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Q8ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(Q8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 750, 710, 60));
-
-        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel7.setText("Question no 8:");
-        jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 750, 140, 30));
-
-        Q9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Q9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Q9ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(Q9, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 840, 710, 60));
-
-        jLabel13.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel13.setText("Question no 9:");
-        jPanel5.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 840, 140, 30));
-
-        Q10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Q10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Q10ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(Q10, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 930, 710, 60));
-
-        jLabel14.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel14.setText("Question no 10:");
-        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 940, 150, 30));
-
-        Q11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Q11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Q11ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(Q11, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 1030, 710, 60));
-
-        jLabel15.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel15.setText("Question no 11:");
-        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1040, 150, 30));
-
-        Q12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Q12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Q12ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(Q12, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 1120, 710, 60));
-
-        jLabel16.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel16.setText("Question no 12:");
-        jPanel5.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1140, 150, 30));
-
-        Q13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Q13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Q13ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(Q13, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 1210, 710, 60));
-
-        jLabel17.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel17.setText("Question no 13:");
-        jPanel5.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1230, 150, 30));
-
-        Q14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        Q14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Q14ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(Q14, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 1290, 710, 60));
-
-        jLabel18.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel18.setText("Question no 14:");
-        jPanel5.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1310, 150, 30));
-
         jButton1.setBackground(new java.awt.Color(27, 75, 101));
         jButton1.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(243, 242, 255));
@@ -373,7 +223,7 @@ public class Quiz_question extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel5.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 1460, 120, 50));
+        jPanel5.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 570, 120, 50));
 
         jButton2.setBackground(new java.awt.Color(243, 242, 255));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -397,81 +247,24 @@ public class Quiz_question extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 544, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 654, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBoxActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        
-    }//GEN-LAST:event_ComboBoxActionPerformed
-
-    private void Q3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q3ActionPerformed
-
-    private void Q4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q4ActionPerformed
-
-    private void Q1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q1ActionPerformed
-
-    private void Q2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q2ActionPerformed
-
-    private void Q15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q15ActionPerformed
-
-    private void Q5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q5ActionPerformed
-
-    private void Q6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q6ActionPerformed
-
-    private void Q7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q7ActionPerformed
-
-    private void Q8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q8ActionPerformed
-
-    private void Q9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q9ActionPerformed
-
-    private void Q10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q10ActionPerformed
-
-    private void Q11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q11ActionPerformed
-
-    private void Q12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q12ActionPerformed
-
-    private void Q13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q13ActionPerformed
-
-    private void Q14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Q14ActionPerformed
+        Quiz_question SR;
+        SR = new  Quiz_question();
+        SR.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-   //     String semes = Semester
+        //     String semes = Semester
         String QUES1  = Q1.getText();
         String QUES2  = Q2.getText();
         String QUES3  = Q3.getText();
@@ -487,7 +280,7 @@ public class Quiz_question extends javax.swing.JFrame {
         String QUES13 = Q13.getText();
         String QUES14 = Q14.getText();
         String QUES15 = Q15.getText();
-    
+
         try {
             insert(QUES1,QUES2,QUES3,QUES4,QUES5,QUES6,QUES7,QUES8,QUES9,QUES10,QUES11,QUES12,QUES13,QUES14,QUES15);
         } catch (SQLException ex) {
@@ -495,13 +288,30 @@ public class Quiz_question extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void Q5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q5ActionPerformed
         // TODO add your handling code here:
-         Quiz_question SR;
-                   SR = new  Quiz_question();
-                   SR.setVisible(false);
-                        dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_Q5ActionPerformed
+
+    private void Q2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Q2ActionPerformed
+
+    private void Q1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Q1ActionPerformed
+
+    private void Q4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Q4ActionPerformed
+
+    private void Q3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Q3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Q3ActionPerformed
+
+    private void ComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComboBoxActionPerformed
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_ComboBoxActionPerformed
 
     /**
      * @param args the command line arguments
@@ -541,37 +351,17 @@ public class Quiz_question extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> ComboBox;
     private javax.swing.JTextField Q1;
-    private javax.swing.JTextField Q10;
-    private javax.swing.JTextField Q11;
-    private javax.swing.JTextField Q12;
-    private javax.swing.JTextField Q13;
-    private javax.swing.JTextField Q14;
-    private javax.swing.JTextField Q15;
     private javax.swing.JTextField Q2;
     private javax.swing.JTextField Q3;
     private javax.swing.JTextField Q4;
     private javax.swing.JTextField Q5;
-    private javax.swing.JTextField Q6;
-    private javax.swing.JTextField Q7;
-    private javax.swing.JTextField Q8;
-    private javax.swing.JTextField Q9;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
