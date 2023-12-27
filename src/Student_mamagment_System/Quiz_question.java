@@ -23,12 +23,12 @@ public class Quiz_question extends javax.swing.JFrame {
         initComponents();
         
     }
-  private void insert(  String QUES1 ,String QUES2,String QUES3,String QUES4,String QUES5,String QUES6,String QUES7,String QUES8,String QUES9,String QUES10,String QUES11,String QUES12,String QUES13,String QUES14,String QUES15) throws SQLException{
+  private void insert(  String QUES1 ,String QUES2,String QUES3,String QUES4,String QUES5) throws SQLException{
       initComponents();
       Connection conn = connection.connect();
       PreparedStatement ps=null ;
       
-      String sql = "INSERT INTO QuizQuestion (Semester,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+      String sql = "INSERT INTO QuizQuestion (Semester,Q1,Q2,Q3,Q4,Q5) VALUES(?,?,?,?,?)";
        ps= conn.prepareStatement(sql);
       ps.setString(1, (String) ComboBox.getSelectedItem());
       ps.setString(2, QUES1 );
@@ -36,20 +36,11 @@ public class Quiz_question extends javax.swing.JFrame {
       ps.setString(4, QUES3 );
       ps.setString(5, QUES4 );
       ps.setString(6, QUES5 );
-      ps.setString(7, QUES6 );
-      ps.setString(8, QUES7 );
-      ps.setString(9, QUES8 );
-      ps.setString(10, QUES9 );
-      ps.setString(11, QUES10 );
-      ps.setString(12, QUES11 );
-      ps.setString(13, QUES12 );
-      ps.setString(14, QUES13 );
-      ps.setString(15, QUES14 );
-      ps.setString(16, QUES15 );
+  
       ps.execute();
       ps.close();
       conn.close();
-      JOptionPane.showMessageDialog(null, "Record has Been Updeted new Student");
+      JOptionPane.showMessageDialog(null, "Questions been added");
        
         
     }
@@ -228,6 +219,7 @@ public class Quiz_question extends javax.swing.JFrame {
         jButton2.setBackground(new java.awt.Color(243, 242, 255));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/close_1.png"))); // NOI18N
+        jButton2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -270,19 +262,10 @@ public class Quiz_question extends javax.swing.JFrame {
         String QUES3  = Q3.getText();
         String QUES4  = Q4.getText();
         String QUES5  = Q5.getText();
-        String QUES6  = Q6.getText();
-        String QUES7  = Q7.getText();
-        String QUES8  = Q8.getText();
-        String QUES9  = Q9.getText();
-        String QUES10 = Q10.getText();
-        String QUES11 = Q11.getText();
-        String QUES12 = Q12.getText();
-        String QUES13 = Q13.getText();
-        String QUES14 = Q14.getText();
-        String QUES15 = Q15.getText();
+
 
         try {
-            insert(QUES1,QUES2,QUES3,QUES4,QUES5,QUES6,QUES7,QUES8,QUES9,QUES10,QUES11,QUES12,QUES13,QUES14,QUES15);
+            insert(QUES1,QUES2,QUES3,QUES4,QUES5);
         } catch (SQLException ex) {
             Logger.getLogger(Quiz_question.class.getName()).log(Level.SEVERE, null, ex);
         }
