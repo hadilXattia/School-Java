@@ -26,13 +26,15 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jTextField10 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jTextField7 = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -100,20 +102,20 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
         jLabel4.setText("Username :");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 200, 40));
 
-        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel5.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel5.setText("Course Teaching. ");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 400, 220, 40));
+        jLabel10.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(27, 75, 101));
+        jLabel10.setText("Class");
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 460, 220, 40));
 
-        jTextField5.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
-        jTextField5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        jTextField10.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        jTextField10.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jTextField10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                jTextField10ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 450, 230, 40));
+        jPanel1.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 500, 230, 40));
 
         jTextField6.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         jTextField6.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -122,13 +124,13 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
                 jTextField6ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 330, 230, 40));
+        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 310, 230, 40));
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(27, 75, 101));
         jLabel6.setText("Designation:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 280, 210, 40));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 260, 210, 40));
 
         jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(27, 75, 101));
@@ -158,6 +160,21 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 620, 120, 50));
+
+        jTextField7.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        jTextField7.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField7ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 410, 230, 40));
+
+        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(27, 75, 101));
+        jLabel7.setText("Course Teaching. ");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 360, 220, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -199,10 +216,10 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jTextField4ActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
         // Course.:
 
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_jTextField10ActionPerformed
 
     private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
         //Designation
@@ -213,13 +230,13 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
         // Enter button
         String First_Name = jTextField1.getText();
         String Last_Name = jTextField1.getText();
-    
+     
         String Designation = jTextField6.getText();
-        String Course = jTextField5.getText();
+        String Course = jTextField7.getText();
         String Password= jTextField3.getText();
         String Username= jTextField4.getText();
-
-        insert(Username,Password,First_Name,Last_Name,Designation,Course);
+       String Class = jTextField10.getText();
+        insert(Username,Password,First_Name,Last_Name,Designation,Class,Course);
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -230,21 +247,25 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
                    SR.setVisible(false);
                         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField7ActionPerformed
 //
-     private void insert(String Username,String Password,String First_Name,String Last_Name,String Designation,String Course){
+     private void insert(String Username,String Password,String First_Name,String Last_Name,String Designation,String Class,String Course){
      try{
         initComponents();
         Connection conn= connection.connect();
         PreparedStatement ps=null ;
-        String sql = "INSERT INTO Teacher(Username,Password,First_Name,Last_Name,Designation,Course) VALUES(?,?,?,?,?,?)";  
+        String sql = "INSERT INTO Teacher(Username,Password,First_Name,Last_Name,Designation,Course,Class) VALUES(?,?,?,?,?,?,?)";  
         ps= conn.prepareStatement(sql);
         ps.setString(1, Username);
         ps.setString(2, Password);
         ps.setString(3, First_Name);
         ps.setString(4, Last_Name);
-    
-        ps.setString(5, Designation);
-        ps.setString(6, Course);
+      ps.setString(5, Class);
+        ps.setString(6, Designation);
+        ps.setString(7, Course);
         ps.execute();
         ps.close();
         conn.close();
@@ -266,18 +287,20 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
     // End of variables declaration//GEN-END:variables
 }

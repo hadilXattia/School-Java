@@ -55,7 +55,6 @@ public class Add_Attendence extends javax.swing.JFrame {
         jPanel6.setBackground(new java.awt.Color(243, 242, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Field6.setEditable(false);
         Field6.setBackground(new java.awt.Color(243, 242, 255));
         Field6.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
         Field6.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
@@ -71,7 +70,6 @@ public class Add_Attendence extends javax.swing.JFrame {
         });
         jPanel6.add(Field6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 230, 220, 40));
 
-        Field9.setEditable(false);
         Field9.setBackground(new java.awt.Color(243, 242, 255));
         Field9.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
         Field9.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
@@ -95,11 +93,11 @@ public class Add_Attendence extends javax.swing.JFrame {
                 jTextField13KeyReleased(evt);
             }
         });
-        jPanel6.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 120, 160, 40));
+        jPanel6.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 120, 160, 40));
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        jLabel7.setText("ROLL NO:");
-        jPanel6.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, 110, 40));
+        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jLabel7.setText("Student ID");
+        jPanel6.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 120, 140, 40));
 
         jPanel8.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -136,7 +134,7 @@ public class Add_Attendence extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(27, 75, 101));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("ATTENDENCE ");
-        jPanel6.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 380, 50));
+        jPanel6.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, 380, 50));
 
         jButton2.setBackground(new java.awt.Color(27, 75, 101));
         jButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
@@ -152,7 +150,7 @@ public class Add_Attendence extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel3.setText("Semester ");
-        jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, 140, 50));
+        jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 140, 50));
 
         f1.setEditable(false);
         f1.setBackground(new java.awt.Color(243, 242, 255));
@@ -176,7 +174,6 @@ public class Add_Attendence extends javax.swing.JFrame {
         });
         jPanel6.add(f2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, 220, 40));
 
-        Field2.setEditable(false);
         Field2.setBackground(new java.awt.Color(243, 242, 255));
         Field2.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
         Field2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
@@ -187,7 +184,6 @@ public class Add_Attendence extends javax.swing.JFrame {
         });
         jPanel6.add(Field2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 280, 220, 40));
 
-        Field3.setEditable(false);
         Field3.setBackground(new java.awt.Color(243, 242, 255));
         Field3.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
         Field3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
@@ -209,7 +205,6 @@ public class Add_Attendence extends javax.swing.JFrame {
         });
         jPanel6.add(f3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 220, 40));
 
-        Field4.setEditable(false);
         Field4.setBackground(new java.awt.Color(243, 242, 255));
         Field4.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
         Field4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
@@ -249,7 +244,7 @@ public class Add_Attendence extends javax.swing.JFrame {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        jPanel6.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 80, 30));
+        jPanel6.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, 80, 30));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(27, 75, 101));
@@ -269,9 +264,9 @@ public class Add_Attendence extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 0, 30, 30));
+        jPanel6.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 10, 30, 30));
 
-        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, -1));
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

@@ -1,6 +1,6 @@
 
 package Student_mamagment_System;
-
+import javax.swing.table.DefaultTableModel;
 import java.sql.Connection;
 import javax.swing.JOptionPane;
 import java.sql.SQLException;
@@ -16,6 +16,7 @@ public class Add_Grades extends javax.swing.JFrame {
     public Add_Grades() {
         initComponents();
         display();
+        display2();
     }
 
     @SuppressWarnings("unchecked")
@@ -24,32 +25,32 @@ public class Add_Grades extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
-        Field6 = new javax.swing.JTextField();
-        Field9 = new javax.swing.JTextField();
-        jTextFieldClass = new javax.swing.JTextField();
+        jTextFieldStudent = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jButton1 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jTextFieldClass = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         f1 = new javax.swing.JTextField();
         f2 = new javax.swing.JTextField();
-        Field2 = new javax.swing.JTextField();
-        Field3 = new javax.swing.JTextField();
         f3 = new javax.swing.JTextField();
-        Field4 = new javax.swing.JTextField();
         f4 = new javax.swing.JTextField();
         f5 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        Field6 = new javax.swing.JTextField();
+        Field2 = new javax.swing.JTextField();
+        Field3 = new javax.swing.JTextField();
+        Field4 = new javax.swing.JTextField();
+        Field9 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jTextFieldUsername = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -60,46 +61,23 @@ public class Add_Grades extends javax.swing.JFrame {
         jPanel6.setBackground(new java.awt.Color(243, 242, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Field6.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        Field6.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
-        Field6.addActionListener(new java.awt.event.ActionListener() {
+        jTextFieldStudent.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
+        jTextFieldStudent.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
+        jTextFieldStudent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Field6ActionPerformed(evt);
+                jTextFieldStudentActionPerformed(evt);
             }
         });
-        Field6.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextFieldStudent.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                Field6KeyReleased(evt);
+                jTextFieldStudentKeyReleased(evt);
             }
         });
-        jPanel6.add(Field6, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 230, 220, 40));
-
-        Field9.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        Field9.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
-        Field9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Field9ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(Field9, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 440, 220, 40));
-
-        jTextFieldClass.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        jTextFieldClass.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
-        jTextFieldClass.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldClassActionPerformed(evt);
-            }
-        });
-        jTextFieldClass.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                jTextFieldClassKeyReleased(evt);
-            }
-        });
-        jPanel6.add(jTextFieldClass, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 120, 160, 40));
+        jPanel6.add(jTextFieldStudent, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 120, 160, 40));
 
         jLabel7.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        jLabel7.setText("Class");
-        jPanel6.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 120, 150, 40));
+        jLabel7.setText("Student ID");
+        jPanel6.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 120, 150, 40));
 
         jPanel8.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -136,7 +114,7 @@ public class Add_Grades extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(27, 75, 101));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("Add grades");
-        jPanel6.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 30, 340, 60));
+        jPanel6.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 30, 340, 60));
 
         jButton2.setBackground(new java.awt.Color(27, 75, 101));
         jButton2.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
@@ -148,93 +126,11 @@ public class Add_Grades extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 510, 110, 40));
+        jPanel6.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 690, 110, 40));
 
         jLabel3.setFont(new java.awt.Font("Comic Sans MS", 2, 24)); // NOI18N
         jLabel3.setText("Semester ");
         jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 160, 50));
-
-        f1.setEditable(false);
-        f1.setBackground(new java.awt.Color(243, 242, 255));
-        f1.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        f1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
-        f1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                f1ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(f1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 220, 40));
-
-        f2.setEditable(false);
-        f2.setBackground(new java.awt.Color(243, 242, 255));
-        f2.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        f2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
-        f2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                f2ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(f2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, 220, 40));
-
-        Field2.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        Field2.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
-        Field2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Field2ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(Field2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 280, 220, 40));
-
-        Field3.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        Field3.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
-        Field3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Field3ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(Field3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 330, 220, 40));
-
-        f3.setEditable(false);
-        f3.setBackground(new java.awt.Color(243, 242, 255));
-        f3.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        f3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
-        f3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                f3ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(f3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 220, 40));
-
-        Field4.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        Field4.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
-        Field4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Field4ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(Field4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 380, 220, 40));
-
-        f4.setEditable(false);
-        f4.setBackground(new java.awt.Color(243, 242, 255));
-        f4.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        f4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
-        f4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                f4ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(f4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 380, 220, 40));
-
-        f5.setEditable(false);
-        f5.setBackground(new java.awt.Color(243, 242, 255));
-        f5.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        f5.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
-        f5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                f5ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(f5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 440, 220, 40));
 
         jComboBox1.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8" }));
@@ -245,16 +141,6 @@ public class Add_Grades extends javax.swing.JFrame {
         });
         jPanel6.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 80, 30));
 
-        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel2.setText("COURSE MARKS ");
-        jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, 210, 40));
-
-        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel1.setText("COURSE NAME ");
-        jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 200, 40));
-
         jButton1.setBackground(new java.awt.Color(243, 242, 255));
         jButton1.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Student_mamagment_System/pic/close_1.png"))); // NOI18N
@@ -263,46 +149,157 @@ public class Add_Grades extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel6.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 0, 30, 30));
-
-        jTable2.setBackground(new java.awt.Color(243, 242, 255));
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
-            new String [] {
-                "Student ID", "Student name", "Student grade"
-            }
-        ));
-        jScrollPane2.setViewportView(jTable2);
-        jTable2.getAccessibleContext().setAccessibleParent(jTable2);
-
-        jPanel6.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 410, -1, -1));
+        jPanel6.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, 30, 30));
 
         jLabel4.setFont(new java.awt.Font("Comic Sans MS", 2, 24)); // NOI18N
         jLabel4.setText("Semester ");
         jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 160, 50));
 
-        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        jLabel9.setText("Student Id");
-        jPanel6.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 150, 40));
+        jTable1.setAutoCreateRowSorter(true);
+        jTable1.setBackground(new java.awt.Color(243, 242, 255));
+        jTable1.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        jTable1.setSelectionBackground(new java.awt.Color(243, 242, 255));
+        jScrollPane1.setViewportView(jTable1);
 
-        jTextFieldUsername.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
-        jTextFieldUsername.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
-        jTextFieldUsername.addActionListener(new java.awt.event.ActionListener() {
+        jPanel6.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, 540, -1));
+
+        jTextFieldClass.setFont(new java.awt.Font("Times New Roman", 2, 24)); // NOI18N
+        jTextFieldClass.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
+        jTextFieldClass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextFieldUsernamejTextFieldUsernameActionPerformed(evt);
+                jTextFieldClassActionPerformed(evt);
             }
         });
-        jTextFieldUsername.addKeyListener(new java.awt.event.KeyAdapter() {
+        jTextFieldClass.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                jTextFieldUsernamejTextFieldUsernameKeyReleased(evt);
+                jTextFieldClassKeyReleased(evt);
             }
         });
-        jPanel6.add(jTextFieldUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 120, 160, 40));
+        jPanel6.add(jTextFieldClass, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 120, 160, 40));
+
+        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jLabel9.setText("Class");
+        jPanel6.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 120, 150, 40));
+
+        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(27, 75, 101));
+        jLabel1.setText("Grades ");
+        jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 250, 200, 40));
+
+        f1.setEditable(false);
+        f1.setBackground(new java.awt.Color(243, 242, 255));
+        f1.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        f1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
+        f1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                f1ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(f1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, 220, 40));
+
+        f2.setEditable(false);
+        f2.setBackground(new java.awt.Color(243, 242, 255));
+        f2.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        f2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
+        f2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                f2ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(f2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 220, 40));
+
+        f3.setEditable(false);
+        f3.setBackground(new java.awt.Color(243, 242, 255));
+        f3.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        f3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
+        f3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                f3ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(f3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 220, 40));
+
+        f4.setEditable(false);
+        f4.setBackground(new java.awt.Color(243, 242, 255));
+        f4.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        f4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
+        f4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                f4ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(f4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 220, 40));
+
+        f5.setEditable(false);
+        f5.setBackground(new java.awt.Color(243, 242, 255));
+        f5.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        f5.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
+        f5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                f5ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(f5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, 220, 40));
+
+        Field6.setBackground(new java.awt.Color(243, 242, 255));
+        Field6.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        Field6.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
+        Field6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Field6ActionPerformed(evt);
+            }
+        });
+        Field6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                Field6KeyReleased(evt);
+            }
+        });
+        jPanel6.add(Field6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 220, 40));
+
+        Field2.setBackground(new java.awt.Color(243, 242, 255));
+        Field2.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        Field2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
+        Field2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Field2ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(Field2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 220, 40));
+
+        Field3.setBackground(new java.awt.Color(243, 242, 255));
+        Field3.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        Field3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
+        Field3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Field3ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(Field3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 410, 220, 40));
+
+        Field4.setBackground(new java.awt.Color(243, 242, 255));
+        Field4.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        Field4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
+        Field4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Field4ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(Field4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 460, 220, 40));
+
+        Field9.setBackground(new java.awt.Color(243, 242, 255));
+        Field9.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
+        Field9.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
+        Field9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Field9ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(Field9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 520, 220, 40));
+
+        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(27, 75, 101));
+        jLabel2.setText("COURSE NAME ");
+        jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 200, 40));
 
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1110, 850));
 
@@ -325,32 +322,8 @@ public class Add_Grades extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void f3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f3ActionPerformed
-       
-    }//GEN-LAST:event_f3ActionPerformed
-
-    private void Field4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Field4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Field4ActionPerformed
-
-    private void f1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_f1ActionPerformed
-
-    private void Field2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Field2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Field2ActionPerformed
-
-    private void Field6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Field6KeyReleased
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Field6KeyReleased
-
-    private void Field9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Field9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Field9ActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-     String Roll = jTextFieldClass.getText();
+     String Roll = jTextFieldStudent.getText();
      String GradeA = Field6.getText();
      String GradeB = Field2.getText();
      String GradeC = Field3.getText();
@@ -383,6 +356,7 @@ public class Add_Grades extends javax.swing.JFrame {
         catch(SQLException e){
             System.out.println(e.toString()); 
         } 
+ 
                 
             
         
@@ -390,42 +364,32 @@ public class Add_Grades extends javax.swing.JFrame {
         
     
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void f2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_f2ActionPerformed
-
-    private void f4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_f4ActionPerformed
-
-    private void f5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_f5ActionPerformed
 public void check() {
     Connection conn = connection.connect();
     PreparedStatement ps = null;
     ResultSet rs = null;
 
     try {
-        // Change the SQL query to select based on username and class
-        String sql = "SELECT * FROM Student WHERE Username= ? AND Class= ? ";
+        // Change the SQL query to select based on class and semester
+        String sql = "SELECT * FROM Student WHERE Class = ? AND Semester = ?";
 
         try {
             ps = conn.prepareStatement(sql);
-            
-            // Change to get username from an input field (e.g., jTextFieldUsername)
-            ps.setString(1, jTextFieldUsername.getText());
-            
-            // Change to get class from another input field (e.g., jTextFieldClass)
-            ps.setString(2, jTextFieldClass.getText());
+
+            // Change to get class and semester from input fields
+            ps.setString(1, jTextFieldStudent.getText());
+            ps.setString(2, (String) jComboBox1.getSelectedItem());
 
             rs = ps.executeQuery();
 
             if (rs.next()) {
                 // Student found, you can perform further actions here
+                // For example, call the display method to show the data
+                display();
             } else {
-                JOptionPane.showMessageDialog(null, "Student Not Found");
+                JOptionPane.showMessageDialog(null, "No students found for the given class and semester");
+                // Clear the JTable if no students are found
+                jTable1.setModel(new DefaultTableModel());
             }
 
         } catch (SQLException ex) {
@@ -444,32 +408,55 @@ public void check() {
     }
 }
 
-    private void jTextFieldClassKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldClassKeyReleased
-        
-    }//GEN-LAST:event_jTextFieldClassKeyReleased
+ public void check2(){
+        Connection conn= connection.connect();
+        PreparedStatement ps=null;
+        ResultSet rs=null;
+        try {
+               String sql="SELECT * From Student Where Roll_Number=?;";
+               try {
+                   ps=conn.prepareStatement(sql);
+                   ps.setString(1, jTextFieldStudent.getText());
+                    rs=ps.executeQuery();
+                   if(rs.next()){
+                      
+                    }
+                   else{
+                        JOptionPane.showMessageDialog(null, "Roll Number Not Found");
+                   }
+                   
+               } catch (SQLException ex) {
+                   Logger.getLogger(Start.class.getName()).log(Level.SEVERE, null, ex);
+               }
+               ps.close();
+               conn.close();
+           } catch (SQLException ex) {
+               Logger.getLogger(Start.class.getName()).log(Level.SEVERE, null, ex);
+           }
+    }
 
-    private void jTextFieldClassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldClassActionPerformed
-       check();
-    }//GEN-LAST:event_jTextFieldClassActionPerformed
+    private void jTextFieldStudentKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldStudentKeyReleased
+        
+    }//GEN-LAST:event_jTextFieldStudentKeyReleased
+
+    private void jTextFieldStudentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldStudentActionPerformed
+   check2();
+    }//GEN-LAST:event_jTextFieldStudentActionPerformed
     
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-      display();
+     check();
+     display2();
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
-       private void jTablePerformed(java.awt.event.ActionEvent evt) {                                       
-       display();
-    }                                      
+    
+    
+    
+    
+    
+                                   
 
     
     
-    private void Field6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Field6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Field6ActionPerformed
-
-    private void Field3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Field3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Field3ActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         
@@ -479,15 +466,109 @@ public void check() {
                         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jTextFieldUsernamejTextFieldUsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldUsernamejTextFieldUsernameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldUsernamejTextFieldUsernameActionPerformed
+    private void jTextFieldClassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldClassActionPerformed
+       check();
+    }//GEN-LAST:event_jTextFieldClassActionPerformed
 
-    private void jTextFieldUsernamejTextFieldUsernameKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldUsernamejTextFieldUsernameKeyReleased
+    private void jTextFieldClassKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldClassKeyReleased
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldUsernamejTextFieldUsernameKeyReleased
+    }//GEN-LAST:event_jTextFieldClassKeyReleased
 
-    public void display(){
+    private void f1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_f1ActionPerformed
+
+    private void f2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_f2ActionPerformed
+
+    private void f3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f3ActionPerformed
+
+    }//GEN-LAST:event_f3ActionPerformed
+
+    private void f4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_f4ActionPerformed
+
+    private void f5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_f5ActionPerformed
+
+    private void Field6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Field6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Field6ActionPerformed
+
+    private void Field6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Field6KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Field6KeyReleased
+
+    private void Field2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Field2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Field2ActionPerformed
+
+    private void Field3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Field3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Field3ActionPerformed
+
+    private void Field4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Field4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Field4ActionPerformed
+
+    private void Field9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Field9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Field9ActionPerformed
+
+public void display() {
+    java.sql.Connection conn = connection.connect();
+    PreparedStatement ps = null;
+    ResultSet rs = null;
+
+    try {
+        String studentClass = jTextFieldClass.getText();
+        String semester = (String) jComboBox1.getSelectedItem();
+
+        String sql = "SELECT * FROM Student WHERE Class = ? AND Semester = ?";
+        ps = conn.prepareStatement(sql);
+        ps.setString(1, studentClass);
+        ps.setString(2, semester);
+        rs = ps.executeQuery();
+
+        // Create a DefaultTableModel with column names
+        DefaultTableModel model = new DefaultTableModel();
+        model.addColumn("Roll_Number");
+        model.addColumn("Username");
+        model.addColumn("Class");
+        model.addColumn("Semester");
+
+        // Populate the table model with data
+        while (rs.next()) {
+            String studentID = rs.getString("Roll_Number");
+            String user = rs.getString("Username");
+            String sClass = rs.getString("Class");
+            String sem = rs.getString("Semester");
+
+            Object[] row = {studentID, user, sClass, sem};
+            model.addRow(row);
+        }
+
+        // Set the model for your JTable
+        jTable1.setModel(model);
+
+    } catch (SQLException ex) {
+        Logger.getLogger(Add_Grades.class.getName()).log(Level.SEVERE, null, ex);
+    } finally {
+        // Close resources in a finally block to ensure they are closed
+        try {
+            if (rs != null) rs.close();
+            if (ps != null) ps.close();
+            conn.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(Add_Grades.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+}
+  public void display2(){
+
         java.sql.Connection conn= connection.connect();
         PreparedStatement ps=null;
         ResultSet rs=null;
@@ -527,6 +608,19 @@ public void check() {
             Logger.getLogger(Add_Grades.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+    
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -584,10 +678,10 @@ public void check() {
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextFieldClass;
-    private javax.swing.JTextField jTextFieldUsername;
+    private javax.swing.JTextField jTextFieldStudent;
     // End of variables declaration//GEN-END:variables
 
 
