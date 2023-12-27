@@ -30,8 +30,6 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -46,17 +44,16 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(27, 75, 101));
         jLabel1.setText("Last Name");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 460, 210, 40));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 170, 210, 40));
 
-        jTextField1.setFont(new java.awt.Font("Sitka Small", 1, 18)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField1.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         jTextField1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 500, 230, 40));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 210, 230, 40));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
@@ -64,8 +61,7 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
         jLabel2.setText("First Name:");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, 210, 40));
 
-        jTextField2.setFont(new java.awt.Font("Sitka Small", 1, 18)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField2.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         jTextField2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,8 +76,7 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
         jLabel3.setText("Password");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 280, 200, 30));
 
-        jTextField3.setFont(new java.awt.Font("Sitka Small", 1, 18)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField3.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         jTextField3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,8 +85,7 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
         });
         jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 320, 230, 40));
 
-        jTextField4.setFont(new java.awt.Font("Sitka Small", 1, 18)); // NOI18N
-        jTextField4.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField4.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         jTextField4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,7 +97,7 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel4.setText("Email :");
+        jLabel4.setText("Username :");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 170, 200, 40));
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
@@ -112,8 +106,7 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
         jLabel5.setText("Course Teaching. ");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 400, 220, 40));
 
-        jTextField5.setFont(new java.awt.Font("Sitka Small", 1, 18)); // NOI18N
-        jTextField5.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField5.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         jTextField5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,8 +115,7 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
         });
         jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 450, 230, 40));
 
-        jTextField6.setFont(new java.awt.Font("Sitka Small", 1, 18)); // NOI18N
-        jTextField6.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField6.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         jTextField6.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -137,22 +129,6 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(27, 75, 101));
         jLabel6.setText("Designation:");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 280, 210, 40));
-
-        jLabel10.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel10.setText("Employee Id:");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 160, 200, 40));
-
-        jTextField9.setFont(new java.awt.Font("Sitka Small", 1, 18)); // NOI18N
-        jTextField9.setForeground(new java.awt.Color(204, 204, 204));
-        jTextField9.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 210, 230, 40));
 
         jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(27, 75, 101));
@@ -231,22 +207,17 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jTextField6ActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
-        // Employee Id
-
-    }//GEN-LAST:event_jTextField9ActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // Enter button
         String First_Name = jTextField1.getText();
         String Last_Name = jTextField1.getText();
-        String Employee_Id = jTextField9.getText();
+    
         String Designation = jTextField6.getText();
         String Course = jTextField5.getText();
         String Password= jTextField3.getText();
         String Username= jTextField4.getText();
 
-        insert(Username,Password,First_Name,Last_Name,Employee_Id,Designation,Course);
+        insert(Username,Password,First_Name,Last_Name,Designation,Course);
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -257,25 +228,25 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
                    SR.setVisible(false);
                         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
-
-     private void insert(String Username,String Password,String First_Name,String Last_Name,String Employee_Id,String Designation,String Course){
+//
+     private void insert(String Username,String Password,String First_Name,String Last_Name,String Designation,String Course){
      try{
         initComponents();
         Connection conn= connection.connect();
         PreparedStatement ps=null ;
-        String sql = "INSERT INTO Teacher(Username,Password,First_Name,Last_Name,Employee_Id,Designation,Course) VALUES(?,?,?,?,?,?,?)";  
+        String sql = "INSERT INTO Teacher(Username,Password,First_Name,Last_Name,Designation,Course) VALUES(?,?,?,?,?,?)";  
         ps= conn.prepareStatement(sql);
         ps.setString(1, Username);
         ps.setString(2, Password);
         ps.setString(3, First_Name);
         ps.setString(4, Last_Name);
-        ps.setString(5, Employee_Id);
-        ps.setString(6, Designation);
-        ps.setString(7, Course);
+    
+        ps.setString(5, Designation);
+        ps.setString(6, Course);
         ps.execute();
         ps.close();
         conn.close();
-        JOptionPane.showMessageDialog(null, "Record has Been Updeted new Student"); 
+        JOptionPane.showMessageDialog(null, "Teacher added succsefully"); 
         }
         catch(SQLException e){
             System.out.println(e.toString()); 
@@ -293,7 +264,6 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -307,6 +277,5 @@ public class Add_Teacher_Record extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }

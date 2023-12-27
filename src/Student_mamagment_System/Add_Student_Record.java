@@ -202,7 +202,7 @@ public class Add_Student_Record extends javax.swing.JFrame {
         initComponents();
         Connection conn= connection.connect();
         PreparedStatement ps=null ;
-        
+        //roll number must be auto increment
         String sql = "INSERT INTO Student(Username,Password,First_Name,Last_Name,Roll_Number,Father_Name,Batch_Number,Semester) VALUES(?,?,?,?,?,?,?,?)";  
         ps= conn.prepareStatement(sql);
         ps.setString(1, Username);

@@ -315,7 +315,7 @@ public class Add_Grades extends javax.swing.JFrame {
         ps.close();
         conn.close();
         
-        JOptionPane.showMessageDialog(null, "Record has Been Updeted new Student");
+        JOptionPane.showMessageDialog(null, "Record has Been Updated new Student");
         }
         catch(SQLException e){
             System.out.println(e.toString()); 
@@ -345,6 +345,7 @@ public class Add_Grades extends javax.swing.JFrame {
         ResultSet rs=null;
         try {
                String sql="SELECT * From Student Where Roll_Number=?;";
+               //a changer Roll_number into username
                try {
                    ps=conn.prepareStatement(sql);
                    ps.setString(1, jTextField13.getText());

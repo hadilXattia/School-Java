@@ -466,7 +466,7 @@ public ViewGrades(){
             }
         }
         catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "Record has Been Updeted new Student");
+            JOptionPane.showMessageDialog(null, "Record has Been Updated new Student");
         }
        finally{
             if(ps != null)
@@ -511,7 +511,7 @@ public ViewGrades(){
             }
         }
         catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "Record has Been Updeted new Student");
+            JOptionPane.showMessageDialog(null, "Record has Been Updated new Student");
         }
        finally{
             if(ps != null)
