@@ -45,8 +45,6 @@ public ViewGrades(){
         m1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         p = new javax.swing.JTextField();
-        gpa = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
         r = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
@@ -205,21 +203,6 @@ public ViewGrades(){
             }
         });
 
-        gpa.setEditable(false);
-        gpa.setBackground(new java.awt.Color(243, 242, 255));
-        gpa.setFont(new java.awt.Font("Tahoma", 2, 24)); // NOI18N
-        gpa.setForeground(new java.awt.Color(27, 75, 101));
-        gpa.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
-        gpa.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gpaActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(27, 75, 101));
-        jLabel3.setText("GPA");
-
         r.setEditable(false);
         r.setBackground(new java.awt.Color(243, 242, 255));
         r.setFont(new java.awt.Font("Tahoma", 2, 24)); // NOI18N
@@ -251,7 +234,7 @@ public ViewGrades(){
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(91, 91, 91)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -277,22 +260,16 @@ public ViewGrades(){
                             .addComponent(m5)))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                            .addGap(120, 120, 120)
+                            .addGap(119, 119, 119)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(r, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                             .addGap(111, 111, 111)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(74, 74, 74)
-                                    .addComponent(gpa, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(36, 36, 36)
-                                    .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(127, Short.MAX_VALUE))
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(36, 36, 36)
+                            .addComponent(p, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(40, 40, 40)
@@ -339,13 +316,9 @@ public ViewGrades(){
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(gpa, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(r, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(54, Short.MAX_VALUE))
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(r, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(116, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(115, 115, 115)
@@ -413,10 +386,6 @@ public ViewGrades(){
     private void pActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_pActionPerformed
-
-    private void gpaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gpaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_gpaActionPerformed
 
     private void rActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rActionPerformed
         // TODO add your handling code here:
@@ -511,7 +480,7 @@ public ViewGrades(){
             }
         }
         catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "Record has Been Updated new Student");
+            JOptionPane.showMessageDialog(null, "Record has Been Updated Student");
         }
        finally{
             if(ps != null)
@@ -531,59 +500,53 @@ public ViewGrades(){
    
     public void Grade(){
         
-        int S1 = Integer.parseInt(m1.getText());
-        int S2 = Integer.parseInt(m2.getText());
-        int S3 = Integer.parseInt(m3.getText());
-        int S4 = Integer.parseInt(m4.getText());    
-        int S5 = Integer.parseInt(m5.getText()); 
+        float S1 =  Float.parseFloat(m1.getText());
+        float S2 =  Float.parseFloat(m2.getText());
+        float S3 =  Float.parseFloat(m3.getText());
+        float S4 =  Float.parseFloat(m4.getText());    
+        float S5 =  Float.parseFloat(m5.getText()); 
         
         float add = S1 + S2 + S3 + S4 + S5;
-        float valOfPercentage = ((add*100)/400);
+        float valOfPercentage = ((add)/5);
         
         String s=String. valueOf(valOfPercentage);
         
         p.setText(s);
         
-        String grade;
+      
         String Remark;
         
-        if(valOfPercentage >= 86){
-            grade= "4.00";
+        if(valOfPercentage >= 18){
+            
             Remark= "Fantastic";
             }
-            else if(valOfPercentage >= 82 && valOfPercentage <86){
-            grade="3.67";
+            else if(valOfPercentage >= 15 && valOfPercentage <17){
+      
             Remark= "Superb";
             }
             
-            else if(valOfPercentage >= 78 && valOfPercentage <82){
-            grade="3.33";
+            else if(valOfPercentage >= 14 && valOfPercentage <15){
+  
             Remark= "Exelent";
             }
             
-            else if(valOfPercentage >= 74 && valOfPercentage <78){
-            grade="3.0";
+            else if(valOfPercentage >= 10 && valOfPercentage <14){
+          
             Remark= "Marvelous";
             }
             
-            else if(valOfPercentage >= 60 && valOfPercentage <70){
-            grade="2.67";
-            Remark= "Good";
-            }
-            else if(valOfPercentage >= 50 && valOfPercentage <60){
-                grade="2.50";
+        
+            else if(valOfPercentage >= 7 && valOfPercentage <10){
+              
                 Remark= "Average";
             }
-            else if(valOfPercentage >= 60 && valOfPercentage <70){
-                grade="2.00";
-                Remark= "Work Hard";
-            }
+         
             else
-            { grade="Fail";
-            Remark= "POOR";
+            { 
+            Remark= "Work harder";
             }
             
-        gpa.setText(grade);
+    
         r.setText(Remark);
         
         
@@ -597,11 +560,9 @@ public ViewGrades(){
     private javax.swing.JTextField f3;
     private javax.swing.JTextField f4;
     private javax.swing.JTextField f5;
-    private javax.swing.JTextField gpa;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
